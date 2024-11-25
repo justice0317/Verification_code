@@ -11,7 +11,7 @@ body {
     position: relative;
     width: 100%;
     text-align: center;
-    padding-top: 5%; /* 原來是 10%，改小讓內容上移 */
+    padding-top: 5%; /* 調整內容上移 */
 }
 
 /* 大標題 */
@@ -68,6 +68,14 @@ body {
     color: #455264;
 }
 
+/* 按鈕容器 */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* 按鈕之間的間距 */
+    margin-top: 30px; /* 與輸入框分開 */
+}
+
 /* 按鈕樣式 */
 .btn-retry, .btn-confirm {
     width: 180px;
@@ -77,7 +85,7 @@ body {
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    margin: 10px auto;
+    text-align: center;
 }
 
 .btn-retry {
