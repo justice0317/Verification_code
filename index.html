@@ -17,25 +17,28 @@
 
             <!-- 提示文字 -->
             <p class="verification-tip">
-                已傳送驗證碼至您的 email<br>
+                已傳送驗證碼至您的 email，<br>
                 請於 <span id="countdown">180</span> 秒內回到此畫面輸入驗證！
             </p>
 
             <!-- 驗證碼輸入框 -->
             <div class="code-input-group">
-                <input type="text" maxlength="1" class="code-input">
-                <input type="text" maxlength="1" class="code-input">
-                <input type="text" maxlength="1" class="code-input">
-                <input type="text" maxlength="1" class="code-input">
-                <input type="text" maxlength="1" class="code-input">
-                <input type="text" maxlength="1" class="code-input">
+                <input type="text" class="code-input" maxlength="1">
+                <input type="text" class="code-input" maxlength="1">
+                <input type="text" class="code-input" maxlength="1">
+                <input type="text" class="code-input" maxlength="1">
+                <input type="text" class="code-input" maxlength="1">
+                <input type="text" class="code-input" maxlength="1">
             </div>
 
-            <!-- 按鈕 -->
-            <button class="btn-retry">重傳驗證碼</button>
-            <button class="btn-confirm">確定送出</button>
+            <!-- 按鈕組 -->
+            <div class="button-group">
+                <button class="btn-retry" onclick="retryCode()">重傳驗證碼</button>
+                <button class="btn-confirm" onclick="submitCode()">確定送出</button>
+            </div>
         </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
